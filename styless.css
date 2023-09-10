@@ -48,11 +48,14 @@ h6 {
   align-items: center;
   height: 100%;
 }
-.svg-container, .text, .rating, ul {
-    margin-bottom: 1.5rem;
+.svg-container,
+.text,
+.rating,
+ul {
+  margin-bottom: 1.5rem;
 }
 .card {
-    font-size: .94rem;
+  font-size: 0.94rem;
   max-width: 20rem;
   background-color: hsl(213, 19%, 18%);
   color: hsl(217, 12%, 63%);
@@ -93,17 +96,26 @@ button {
   text-transform: uppercase;
   font-weight: 700;
 }
-fieldset{
-    padding: 0;
-    border: none;
+button:hover{
+  cursor: pointer;
+  background-color: white;
+  color: hsl(25, 97%, 53%);
 }
-.hidden-radio{
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
+fieldset {
+  padding: 0;
+  border: none;
+}
+.hidden-radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 input[type="radio"]:checked + label {
-    background-color: hsl(25, 97%, 53%);
-    color: white;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+.flex-group label:hover {
+  background-color: hsl(217, 12%, 63%); /* Change this to your desired highlight color */
+  color: white;
 }
