@@ -44,6 +44,7 @@ h6 {
 }
 .main-layout {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -51,10 +52,10 @@ h6 {
 .svg-container,
 .text,
 .rating,
-ul {
+ul, .thanks-illustr, .rating-result {
   margin-bottom: 1.5rem;
 }
-.card {
+.card, .thank-you-card {
   font-size: 0.94rem;
   max-width: 20rem;
   background-color: hsl(213, 19%, 18%);
@@ -62,8 +63,8 @@ ul {
   font-family: "Overpass", sans-serif;
   border-radius: 10px;
 }
-main {
-  margin: 1.5rem;
+.main-padding {
+  padding: 1.5rem;
 }
 h1 {
   color: white;
@@ -118,4 +119,25 @@ input[type="radio"]:checked + label {
 .flex-group label:hover {
   background-color: hsl(217, 12%, 63%); /* Change this to your desired highlight color */
   color: white;
+}
+.rating-text{
+  display: inline-block;
+  padding: .5rem;
+  border-radius: 15px;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 23.5%);
+}
+.thanks-heading{
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.thank-you-card{
+  display: none;
+  text-align: center;
+}
+.thanks-illustr{
+  display: flex;
+  justify-content: center;
+
 }
