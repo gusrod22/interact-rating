@@ -6,10 +6,13 @@ const ratingText = document.querySelector(".rating-text");
 const cardDiv = document.querySelector(".card");
 const thankYouCardDiv = document.querySelector(".thank-you-card");
 
+//reference error message
+const errorMessage = document.querySelector(".error-message");
+
 submitButton.addEventListener("click", function (event) {
   event.preventDefault();
 
-  let selectedRating;
+  let selectedRating = null;
   for (const radioButton of ratingRadioButtons) {
     if (radioButton.checked) {
       selectedRating = radioButton.value;
@@ -17,8 +20,13 @@ submitButton.addEventListener("click", function (event) {
     }
   }
 
+  if (selectedRating === null) {
+    errorMessage.style.display = "block";
+    return;
+  }
+
   ratingText.innerHTML = `You selected ${selectedRating} out of 5`;
 
-  cardDiv.style.display = 'none';
-  thankYouCardDiv.style.display = 'block'
+  cardDiv.style.display = "none";
+  thankYouCardDiv.style.display = "block";
 });
