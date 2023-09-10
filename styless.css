@@ -11,6 +11,7 @@ body {
   height: 100%;
 }
 body {
+  background-color: hsl(216, 12%, 8%);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -40,4 +41,69 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+.main-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.svg-container, .text, .rating, ul {
+    margin-bottom: 1.5rem;
+}
+.card {
+    font-size: .94rem;
+  max-width: 20rem;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  font-family: "Overpass", sans-serif;
+  border-radius: 10px;
+}
+main {
+  margin: 1.5rem;
+}
+h1 {
+  color: white;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+label {
+  padding: 1rem;
+  height: 40px;
+  background-color: hsl(213, 19%, 23.5%);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+button {
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+fieldset{
+    padding: 0;
+    border: none;
+}
+.hidden-radio{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+input[type="radio"]:checked + label {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
 }
